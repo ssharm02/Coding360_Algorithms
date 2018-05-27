@@ -254,3 +254,13 @@ function findLongestWord(str) {
   }
 
 console.log(findLongestWord('I would like to work at RBC'));
+
+function isPalindrome(str) {
+  let forwardStr = str.toLowerCase().replace(/[W_]/g, '');;
+  let reversedStr = forwardStr.split('').reverse().join('');
+
+  
+  return forwardStr === reversedStr;
+}
+
+console.log(isPalindrome('_codegod'));
